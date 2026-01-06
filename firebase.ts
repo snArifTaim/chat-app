@@ -5,12 +5,12 @@ import { Auth, initializeAuth, getReactNativePersistence, getAuth } from 'fireba
 import ReactNativeAsyncStorage from '@react-native-async-storage/async-storage';
 
 const firebaseConfig = {
-  apiKey: "AIzaSyDXbAtc4nSOeExsGAS3h55mBGYXxI7vzH4",
-  authDomain: "social-media-app-a3a22.firebaseapp.com",
-  projectId: "social-media-app-a3a22",
-  storageBucket: "social-media-app-a3a22.firebasestorage.app",
-  messagingSenderId: "738545988926",
-  appId: "1:738545988926:web:c82d558186211503ba286f"
+  apiKey: process.env.EXPO_PUBLIC_FIREBASE_API_KEY,
+  authDomain: process.env.EXPO_PUBLIC_FIREBASE_AUTH_DOMAIN,
+  projectId: process.env.EXPO_PUBLIC_FIREBASE_PROJECT_ID,
+  storageBucket: process.env.EXPO_PUBLIC_FIREBASE_STORAGE_BUCKET,
+  messagingSenderId: process.env.EXPO_PUBLIC_FIREBASE_MESSAGING_SENDER_ID,
+  appId: process.env.EXPO_PUBLIC_FIREBASE_APP_ID
 };
 
 // Initialize Firebase safely
